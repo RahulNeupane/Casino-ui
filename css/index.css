@@ -171,6 +171,14 @@ h1{
     padding: 0 20px;
 }
 
+.two-columns .col.large-col{
+    width: 58.33%;
+
+}
+.two-columns .col.small-col{
+    width: 41.66%;
+
+}
 .about-part .image-wrap{
     position: relative;
     /* width: 500px;
