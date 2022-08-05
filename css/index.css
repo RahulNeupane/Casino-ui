@@ -11,6 +11,7 @@ body{
     font-family:  'Roboto','Poppins', sans-serif;
     font-weight: 400; */
     font: 17px/1.53 'Roboto' ,sans-serif;
+    overflow-x: hidden;
    
 }
 
@@ -132,7 +133,13 @@ h2{
     color: #010304;
     margin: 0 0 45px;
 }
-
+h3{
+    font-size: 25px;
+    line-height: 1.3;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin:0 0 15px;
+}
 .style{
     position:relative;
     padding-left: 44px;
@@ -176,8 +183,14 @@ h2{
     padding: 0 20px;
 }
 
+.four-columns{
+    margin: 0 -10px;
+}
+
 .four-columns .col{
     width: auto;
+    flex: 1;
+    padding: 0 10px;
 }
 
 .two-columns .col.large-col{
@@ -216,6 +229,10 @@ h2{
 .products-part p{
     margin: 0 0 15px;
 }
+
+.products-part .four-columns{
+    padding: 40px 0;
+}
 .products-part .style::after{
     top: -6px;
 }
@@ -223,20 +240,45 @@ h2{
 .product-detail{
     background-color: #121212;
     border-radius: 23px;
+    color: #fff;
+    font-family:'Poppins', sans-serif;
 }
 
-.product-detail .product-image{
+/* .product-detail .product-image{
     height: 400px;
     position: relative;
+} */
+
+.products-part .col .product-image{
+    height: 400px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.products-part .col:nth-child(2) .product-image{
+    height: 305px;
+}
+.products-part .col:nth-child(3) .product-image{
+    height: 250px;
+}
+.products-part .col:nth-child(4) .product-image{
+    height: 182px;
+}
+
+.product-content{
+    padding: 0 20px 30px;
+    font-size: 14px;
+    line-height: 1.57;
 }
 
 .product-code{
     background-color: #000;
-    color: #fff;
     width: 62px;
     height: 62px;
     border-radius: 50%;
-    font-family:'Poppins', sans-serif;
     font-size: 25px;
     border: 2px solid #b03d42;
     /* display: flex;
@@ -245,4 +287,21 @@ h2{
     align-items: center; */
     line-height: 62px;
     text-align: center;
+    margin: -30px auto 13px;
+    position: relative;
+    z-index: 9;
+}
+
+.product-detail h3{
+    margin-bottom: 20px;
+}
+
+.products-part .button-wrap{
+    padding: 15px 0;
+}
+.products-part .btn{
+    text-transform: capitalize;
+}
+.products-part .btn.primary{
+    border-color: #b03d42;
 }
