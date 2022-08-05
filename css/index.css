@@ -124,7 +124,7 @@ h1{
 }
 
 
-.col h2{
+h2{
     font-size: 35px;
     line-height: 2;
     text-transform: uppercase;
@@ -136,6 +136,8 @@ h1{
 .style{
     position:relative;
     padding-left: 44px;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .style::after{
@@ -155,11 +157,14 @@ h1{
     width: 100%;
     margin: 0 auto;
 }
+.container.lg{
+    max-width: 1310px;
 
+}
 .about-part{
     padding: 120px 0;
 }
-.two-columns{
+.two-columns,.four-columns{
     display: flex;
     flex-wrap: wrap;
     margin: 0 -20px;
@@ -169,6 +174,10 @@ h1{
 .two-columns .col{
     width: 50%;
     padding: 0 20px;
+}
+
+.four-columns .col{
+    width: auto;
 }
 
 .two-columns .col.large-col{
@@ -195,3 +204,45 @@ h1{
     margin-top: 60px;
 }
 
+.products-part{
+    text-align: center;
+}
+
+.products-part h2{
+    line-height: 1;
+    margin-bottom: 17px;
+}
+
+.products-part p{
+    margin: 0 0 15px;
+}
+.products-part .style::after{
+    top: -6px;
+}
+
+.product-detail{
+    background-color: #121212;
+    border-radius: 23px;
+}
+
+.product-detail .product-image{
+    height: 400px;
+    position: relative;
+}
+
+.product-code{
+    background-color: #000;
+    color: #fff;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    font-family:'Poppins', sans-serif;
+    font-size: 25px;
+    border: 2px solid #b03d42;
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; */
+    line-height: 62px;
+    text-align: center;
+}
